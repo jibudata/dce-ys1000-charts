@@ -1,0 +1,23 @@
+apiVersion: v1
+entries:
+  ys1000:
+  - apiVersion: v2
+    appVersion: 2.10.1
+    created: "2022-12-01T08:08:02.649370761Z"
+    dependencies:
+    - condition: tags.mysql
+      name: mysql
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.x.x
+    - condition: tags.clusterpedia
+      name: clusterpedia
+      repository: https://clusterpedia-io.github.io/clusterpedia-helm
+      version: 1.x.x
+    description: it provides data protection for kubernetes apps
+    digest: 0bc747d675a4036404b64275eae930ea5508b7a7ac5dab2d255c55759c21d9eb
+    name: ys1000
+    type: application
+    urls:
+    - https://github.com/jibudata/dce-ys1000-charts/releases/download/ys1000-2.10.1/ys1000-2.10.1.tgz
+    version: 2.10.1
+generated: "2022-12-01T08:08:02.350006757Z"
