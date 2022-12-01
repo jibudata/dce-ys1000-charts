@@ -19,6 +19,11 @@ jobs:
           git config user.name "ys1000"
           git config user.email "jerry@jibudata.com"
 
+      - name: Add Helm Chart dependencies
+        run: |
+          helm repo add bitnami https://charts.bitnami.com/bitnami
+          helm repo add clusterpedia https://clusterpedia-io.github.io/clusterpedia-helm
+
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.1.0
         env:
